@@ -10,7 +10,7 @@ data "aws_ami" "app_ami" {
   filter {
     name   = "architecture"
     values = ["x86_64"]
-
+}
 }
 
 resource "aws_instance" "web" {
